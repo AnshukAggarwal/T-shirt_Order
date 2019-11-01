@@ -1,0 +1,146 @@
+﻿html {
+	box-sizing:border-box;
+}
+*,*:before, *:after{
+	box-sizing:inherit;
+}
+body:
+{color:#fefefe;
+}
+.page-container{
+	max-width:980px;
+	margin:0 auto;
+}
+#header, #main, #footer{
+	/*border:1px solid black;*/	
+	padding:1em;
+}
+/*Header*/
+header{
+width:100%;
+float:left;
+background-color:#708090;
+
+}
+
+#title-heading{
+	color:white;
+}
+#logo{
+	float:left;
+	max-width:100px;
+}
+.navigation{
+	float:right;
+	margin-top:6em;
+}
+#main-img{
+	max-width:100%;
+}		
+.menu li{
+display:inline-block;
+
+}
+.menu li a {
+text-decoration:none;
+color:white;
+padding-left:0.5em;
+
+}
+#main{
+	clear:both;
+	float:left;/*to accomodate margin collapse as both the children are floated*/
+	width:100%;/*to accomodate margin collapse as both the children are floated*/
+	padding:3em 4em 3em 4em;
+	border:1px solid black;
+}
+
+#merchandise{
+	float:left;
+	width:50%;
+}
+#form{
+	float:right;
+	width:50%;
+}
+#footer{
+	clear:both;
+	background-color:#1E1E1E;
+	color:white;
+	font-size:0.75em;
+	padding:2em 4em 4em 2em;
+	
+}
+h1{
+	margin-top:5px;
+	font-weight:bold;
+	font-size:1.25em;
+}
+figcaption{
+	margin:20px;
+	margin-top:30px;
+	padding-left:70px;
+	font-size:0.75em;
+}
+.container{
+	display:flex;
+}
+.pickcolour{
+	width:20px;
+	height:20px;
+	margin:5px;
+}
+.white{
+	background-color:#707070;
+}
+.black{
+	background-color:black;
+}
+.red{
+	background-color:red;
+}
+.blue{
+	background-color:blue;
+}
+.green{
+	background-color:green;
+}
+.purple{
+	background-color:purple;
+}
+#white,#black,#red,#blue,#green,#purple{
+	opacity:0;
+}
+.hidden{
+	display:none;
+}
+figcaption{
+	text-transform:capitalize;
+	font-size:1em;
+	text-align:left;
+}
+/*.pickcolour > label {
+	display:inline-block;
+	padding-left:20px;
+	overflow:hidden;
+	width:20px;
+	height:20px;
+	
+}*/
+
+
+
+
+/*
+	Attributes below
+	----------------
+    T-Shirt Images Taken from user "originalmicheal"
+    https://purepng.com/originalmichael
+    License: Free for commercial use with Attribution Required
+    
+    Jam icon
+    <a href="https://icon-library.net/icon/jam-icon-26.html">Jam Icon #37164</a>
+    License: CC0 for personal use
+    
+    Code Challenge Developed by Christine Bittle
+*/

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Merchandise</title>
+    <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+	<div class="page-container">
+		<header id="header">
+			<div id="logo">
+				<img id="main-img" src="images/codejamlogo.jpg" alt="picture of a jar"/>
+				<h2 id="title-heading"> HTTP Week 8 </h2>
+			</div>
+			<nav class= "navigation">
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Merchandise</a></li>
+				</ul>
+			</nav>
+		
+	</header>
+	</div>
+	<div class="page-container">
+		<main id="main">
+			<section id="merchandise-form">
+			<section id="merchandise">
+				<h1>Merchandise</h1>
+				<figure>
+					
+					<figcaption><span id="tshirst_size">Small</span>
+				<span id="tshirt_colour">White </span>
+				<span id="tshirt_style">Crew Cut T-shirt</span></figcaption>
+				<img class="t-shirt" id="merch_image" src="images/tshirt-white.png" alt="a white t-shirt" width="300"/>
+				</figure>
+			</section>
+			<section id="form">
+				<form>
+					<h2 id="form-heading">Your Order:</h2>
+					<label>Select Colour:</label>
+						<div class="container">
+						<div class="pickcolour white">
+							<input onchange="colourchange();"type= "radio" id="white" name="tshirt_colour" value="white">
+							<label for="white" class="hidden">White</label>
+						</div>
+						<div class="pickcolour black">
+							<input onchange="colourchange();" type= "radio" id="black" name="tshirt_colour" value="black">
+							<label for="black" class="hidden">Black</label>
+						</div>
+						<div class="pickcolour red">
+							<input onchange="colourchange();" type= "radio" id="red" name="tshirt_colour" value="red">
+							<label for="red" class="hidden">Red</label>
+						</div>
+						<div class="pickcolour blue">
+							<input onchange="colourchange();" type= "radio" id="blue" name="tshirt_colour" value="blue">
+							<label for="blue" class="hidden">Blue</label>
+						</div>
+						<div class="pickcolour green">
+							<input onchange="colourchange();" type= "radio" id="green" name="tshirt_colour" value="green">
+							<label for="green" class="hidden">Green</label>
+						</div>
+						<div class="pickcolour purple">
+							<input onchange="colourchange();" type= "radio" id="purple" name="tshirt_colour" value="purple">
+							<label for="purple" class="hidden">Purple</label>
+						</div>
+						
+						</div>
+					<label for="size">Choose Size:</label>
+						<select onchange="sizeChange();" id="size" name="size">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<div>
+							<label for="style">Style:</label>
+								<select onchange="styleChange();" id="style" name="style">
+									<option value="Plain">Plain</option>
+									<option value="Crew Cut">Crew Cut(+$2.00)</option>
+									<option value="V-neck">V-neck(+$5.00)</option>
+									<option value="Baseball">Baseball(+$1.00)</option>
+								</select>
+						</div>
+						<div>
+							<label for="name">Name:</label>
+							<input type="text" id="name">
+						</div>
+						<div>
+							<label for="address">Address:</label>
+							<textarea></textarea>
+						</div>
+						<div>
+						<label>Delivery Type</label>
+						<input type="radio" id="normal" name="del_type">
+						<label for="normal">Normal</label>
+						<input type="radio" id="express" name="del_type">
+						<label for="express">Express(+$10.00)</label>
+						
+						</div>
+						<div>
+							<button type="submit" id="order" name="order">Order</button>
+						</div>
+				</form>
+				
+			</section>
+		
+		</section>
+		
+		</main>
+		</div>
+		<div class="page-container">
+		<footer id="footer">
+			<p>This website is for educational purposes only.</p>
+		
+		<script src="scripts/validate.js"></script>
+		</footer>
+		</div>
+</body>
+</html>
